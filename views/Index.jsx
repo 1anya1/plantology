@@ -6,6 +6,8 @@ class Index extends React.Component {
         <div>
             <nav>
                 <a href="/blogs/new">Add New Blog </a>
+                <a href='/blogs'>About Us</a>
+                <a href='/blogs'>Home Page</a>
             </nav>
             <h1>Blog Page</h1>
             <ul>
