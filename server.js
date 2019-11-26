@@ -33,7 +33,7 @@ app.get('/blogs/new', (req, res)=>{
 app.get('/blogs/:id', (req, res)=>{
     Blog.findById(req.params.id, (err, foundBlogs)=>{
         res.render('Show', {blog : foundBlogs});
-        console.log(foundBlogs);
+        
     });
 });
    

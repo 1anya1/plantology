@@ -13,10 +13,11 @@ class Edit extends React.Component {
         <nav class="navigation">
                 <a href='/blogs'>Home Page</a>
                 <a href="/blogs/new">Add New Blog </a>
-                <a href='/blogs/about'>About Us</a>        
+                      
         </nav>
-            <h1>Edit Blog</h1>
-             <div class="form">
+            
+            <div class="form">
+            <h1>Edit Blog</h1>
             <form action={`/blogs/${this.props.blog._id}?_method=PUT`}method="POST">
             <div class="row">
                   <div class="col">

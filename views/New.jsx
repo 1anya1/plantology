@@ -14,12 +14,10 @@ class New extends React.Component {
             <nav class="navigation">
                 <a href='/blogs'>Home Page</a>
                 <a href="/blogs/new">Add New Blog </a>
-                <a href='/blogs'>About Us</a>
+                
             </nav>
             <div class="form">
-
-            <h1>New Blog Entry</h1>
-            
+            <h1>New Blog Entry</h1>
             <form action="/blogs" method="POST">
                 <div class="row">
                   <div class="col">
