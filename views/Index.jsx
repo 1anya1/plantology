@@ -15,11 +15,15 @@ class Index extends React.Component {
                     this.props.blogs.map((blog, i)=>{
                         return(
                             <li>
-                            The <a href={`/blogs/${blog._id}`}> <h3>{blog.title}</h3> </a> <br/> 
+                            <a href={`/blogs/${blog._id}`}> <h3>{blog.title}</h3> </a> <br/> 
                                <br/> 
                                <h4>{blog.author}</h4> <br/> 
+                               <h6>{blog.date}</h6>
                                 <img src={blog.image} style={{width:'200px'}}></img>
-                              
+                    
+                                
+
+            
                             </li>
                         )
                     })

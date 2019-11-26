@@ -5,7 +5,7 @@ const blogSchema = new mongoose.Schema ({
     author: String,
     image: String, 
     body: String, 
-    date: Date
+    date: String
 });
 console.log(blogSchema);
 const Blog = mongoose.model('Blog', blogSchema );

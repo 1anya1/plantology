@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const Blog = require('./models/blogs.js');
-// const methodOverride = require('method-override');
+const methodOverride = require('method-override');
 
 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 app.use(express.urlencoded({extended: true}));
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 
@@ -44,6 +44,12 @@ app.post('/blogs/', (req, res)=>{
     Blog.create(req.body, (err, createBlog)=>{
         res.redirect('/blogs');
     });  
+});
+
+app.delete('/blogs/:id', (req, res)=>{
+    Blog.findByIdAndRemove(req.params.id, (err, data)=>{
+        res.redirect('/blogs'); 
+    });
 });
 
 //Mongoose connection
