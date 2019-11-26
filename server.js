@@ -27,6 +27,10 @@ app.get('/blogs/new', (req, res)=>{
     res.render('New');
     
 });
+app.get('/blogs/about', (req, res)=>{
+    res.render('About');
+    
+});
 
 
 // Show route

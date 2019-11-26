@@ -17,6 +17,7 @@ class Index extends React.Component {
     
         <nav class="navigation">
             <a href='/blogs'>Home Page</a>
+            <a href='/blogs/about'>About Us</a>
             <a href="/blogs/new">Add New Blog </a> 
         </nav>
 

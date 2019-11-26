@@ -12,9 +12,10 @@ class About extends React.Component {
             <link rel="stylesheet" href="/app.css"></link>
         </head>
             <nav class="navigation">
+                <a href='/blogs'>Home Page</a>
                 <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs/about'>About Us</a>
-                <a href='/blogs'>Home Page</a>
+                
             </nav>
             <h1>About Us</h1>
         </div>

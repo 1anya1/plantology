@@ -23,24 +23,20 @@ a{
 nav a:hover {
     color: #F7B733;
   }
-ul{
+ul {
     list-style-type: none;
     margin: 0;
-  }
+}
 
 .index{
-      /* background: white;  */
-      width: 100%; 
-      /* border: black solid 1px;  */
-  }
-h1{
+   width: 100%; 
+}
+h1, h2{
     text-align: center;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 52px;
-    margin: 21px;
-    
-    
+    margin: 21px;    
 }
 h3{
       margin:0;
@@ -50,11 +46,20 @@ h3{
       text-decoration: none;
       font-family: 'Amatic SC', cursive;
       font-size: 31px;
-  }
-  h3:hover{
-      color:#F7B733;
+}
+h3:hover{
+    color:#F7B733;
 
-  }
+}
+h4{ 
+    margin: 0; 
+    text-align: center; 
+    color: rgb(78, 78, 78);
+    font-family: 'Amatic SC', cursive;
+    font-size: 21px;
+    padding: 0 0 11px 0;
+
+}
 h5{
       margin: 0; 
       text-align: center; 
@@ -71,7 +76,14 @@ h6{
     font-size: 13px;
     padding: 0 0 11px 0;
 }
-
+p{
+    
+    text-align: center; 
+    background: white; 
+    color: rgb(78, 78, 78);
+    font-size: 25px;
+    /* padding: 11px; */
+}
 .container{
     display: grid; 
     /* grid-template-columns: 1fr 1fr 1fr; */
@@ -104,4 +116,15 @@ form{
 }
 .form{
     background:#4ABDAC; 
+}
+.pageID{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 30%;
+    border:#F7B733 dotted 5px;
+
 }
