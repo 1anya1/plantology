@@ -62,7 +62,7 @@ app.get('/blogs/:id/edit', (req, res) => {
 });
 //Put Route
 app.put('/blogs/:id', (req, res)=>{
-    Blog.findById(req.params.id, req.body, {new:true}, (err, updateModel)=>{
+    Blog.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateModel)=>{
         res.redirect('/blogs');
     });
 });

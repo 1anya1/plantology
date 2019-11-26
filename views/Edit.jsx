@@ -7,25 +7,38 @@ class Edit extends React.Component {
        <head>
             <meta charSet="utf-8"/>
             <title>{this.props.title}</title>
-            <link rel="stylesheet" href="/normalize.css"></link>
-            <link rel="stylesheet" href="/skeleton.css"></link>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
             <link rel="stylesheet" href="/app.css"></link>
         </head>
         <nav class="navigation">
-                <a href="/blogs/new">Add New Blog </a>
-                <a href='/blogs/about'>About Us</a>
                 <a href='/blogs'>Home Page</a>
-            </nav>
-            <h1>New Blog Entry</h1>
+                <a href="/blogs/new">Add New Blog </a>
+                <a href='/blogs/about'>About Us</a>        
+        </nav>
+            <h1>Edit Blog</h1>
+             <div class="form">
             <form action={`/blogs/${this.props.blog._id}?_method=PUT`}method="POST">
-                Title: <input type="text" name="title" defaultValue={this.props.blog.title}/><br/>
-                Author: <input type="text" name="author" defaultValue={this.props.blog.author}/><br/>
-                Image: <input type="URL" name="image" defaultValue={this.props.blog.image}/><br/>
-                Date: <input type="text" name="date" defaultValue={this.props.blog.date}/><br/>
-                Content: <textarea class= 'Blog'type="text" name="body" defaultValue={this.props.blog.content} /><br/>
-                
-                <input type="submit" name="" value="Create Blog"/>
+            <div class="row">
+                  <div class="col">
+                    <input type="text" name="title" class="form-control"  placeholder={this.props.blog.title}/><br/>
+                  </div>
+                <div class="col">  
+                    <input type="text" name="author" class="form-control" placeholder={this.props.blog.author}/><br/>
+                  </div>
+                </div>
+              <div class="row">
+                    <div class="col">
+                      <input type="URL" name="image" class="form-control" placeholder={this.props.blog.image}/><br/>
+                    </div>
+                  <div class="col">  
+                    <input type="text" name="date" class="form-control" placeholder={this.props.blog.date}/><br/>
+                  </div>
+                </div>
+              <div class="col-auto">
+                  <button type="submit" class="btn btn-primary" name="" >UpdateBlog</button>
+                </div>
              </form>
+            </div>
         </div>);
   }
 }
