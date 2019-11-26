@@ -16,34 +16,39 @@ class New extends React.Component {
                 <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs'>About Us</a>
             </nav>
+            <div class="form">
 
             <h1>New Blog Entry</h1>
             
             <form action="/blogs" method="POST">
-                <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" name="title" class="form-control" placeholder="BlogPost Title"/><br/>
+                  </div>
+                  <div class="col">  
+                    <input type="text" name="author" class="form-control"  placeholder="Your Name"/><br/>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" name="date" class="form-control" placeholder=" Date (i.e 11.12.2012)"/><br/>
+                    </div>
+                    <div class="col">  
+                      <input type="URL" name="image" class="form-control" placeholder="Image URL"/><br/>
+                    </div>
+                  </div>
+                  <div class="form-group">
                 
-                <label for="formGroupExampleInput">Title</label>
-                <input type="text" name="title" class="form-control" id="formGroupExampleInput" placeholder="Title of Blog Post"/><br/>     
-                
-                <label for="formGroupExampleInput">Author</label>
-                <input type="text" name="author" class="form-control" id="formGroupExampleInput" placeholder="Your Name"/><br/>
-
-                <label for="formGroupExampleInput">Date</label>
-                <input type="text" name="date" class="form-control" id="formGroupExampleInput" placeholder=" ex: 11.12.2012"/><br/>
-
-                <label for="formGroupExampleInput">Image URL</label>
-                <input type="URL" name="image" class="form-control" id="formGroupExampleInput" placeholder="Image Link"/><br/>
-
-                <div class="form-group">
-
-                <label for="exampleFormControlTextarea1">Blog Post</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" type="text" name="body" /><br/>
+                <textarea class="form-control" placeholder="Your thought go here ...." rows="3" type="text" name="body" /><br/>
                 </div>
-
-                <input type="submit" name="" value="Create Blog"/>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary" name="" >Create Blog</button>
                 </div>
-             </form>
                 
+             </form>
+            </div>;
+              
      </div>);
   }
 }
