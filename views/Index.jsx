@@ -4,6 +4,14 @@ class Index extends React.Component {
   render() {
     return (
         <div>
+        <head>
+            <meta charSet="utf-8"/>
+            <title>{this.props.title}</title>
+            <link rel="stylesheet" href="/normalize.css"></link>
+            <link rel="stylesheet" href="/skeleton.css"></link>
+            <link rel="stylesheet" href="/app.css"></link>
+        </head>
+    
             <nav>
                 <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs'>About Us</a>

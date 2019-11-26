@@ -1,0 +1,12 @@
+body{
+    background: violet; 
+    padding: 45px; 
+
+}
+h1{
+    text-align: center; 
+}
+nav a{
+   padding: 45px; 
+   text-align: left; 
+}
