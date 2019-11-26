@@ -11,7 +11,7 @@ class New extends React.Component {
             <link rel="stylesheet" href="/skeleton.css"></link>
         </head>
     
-            <nav>
+            <nav class="navigation">
                 <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs'>About Us</a>
                 <a href='/blogs'>Home Page</a>

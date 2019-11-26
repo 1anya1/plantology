@@ -1,12 +1,84 @@
 body{
     background: violet; 
-    padding: 45px; 
+ 
 
 }
-h1{
-    text-align: center; 
+
+.navigation {
+    background: white; 
+    height: 50px; 
 }
 nav a{
-   padding: 45px; 
-   text-align: left; 
+     
+    float: left;
+    color: #1bc55c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+ 
+
+}
+nav a:hover {
+    color: blue;
+  }
+ul{
+    list-style-type: none;
+    margin: 0;
+  }
+
+.index{
+      /* background: white;  */
+      width: 100%; 
+      /* border: black solid 1px;  */
+  }
+h1{
+    text-align: center;
+}
+h4{
+      margin:0;
+      text-align: center; 
+      padding: 25px 10px 10px 10px;
+      color: rgb(73, 73, 73);
+      text-decoration: none;
+  }
+  h4:hover{
+      color: pink;
+
+
+  }
+h5{
+      margin: 0; 
+      text-align: center; 
+  }
+h6{
+    margin: 0; 
+    text-align: center; 
+}
+
+.container{
+    display: grid; 
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+}
+li{
+    background: white;
+    border: black solid 1px;
+    height: 400px; 
+    width: 300px; 
+    margin: 0 10px 10px 0 ;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: auto;
+
 }

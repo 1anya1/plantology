@@ -5,7 +5,14 @@ class Show extends React.Component {
         return (
         
         <div>
-             <nav>
+            <head>
+            <meta charSet="utf-8"/>
+            <title>{this.props.title}</title>
+            <link rel="stylesheet" href="/normalize.css"></link>
+            <link rel="stylesheet" href="/skeleton.css"></link>
+            <link rel="stylesheet" href="/app.css"></link>
+        </head>
+        <nav class="navigation">
                 <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs'>About Us</a>
                 <a href='/blogs'>Home Page</a>
