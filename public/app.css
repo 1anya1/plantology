@@ -1,7 +1,5 @@
 body{
-    background: violet; 
- 
-
+    background:#4ABDAC; 
 }
 
 .navigation {
@@ -11,7 +9,7 @@ body{
 nav a{
      
     float: left;
-    color: #1bc55c;
+    color: #FC4A13;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -19,8 +17,11 @@ nav a{
  
 
 }
+a{
+    text-decoration: none;
+}
 nav a:hover {
-    color: blue;
+    color: #F7B733;
   }
 ul{
     list-style-type: none;
@@ -34,26 +35,40 @@ ul{
   }
 h1{
     text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 52px;
+    
+    
 }
-h4{
+h3{
       margin:0;
       text-align: center; 
       padding: 25px 10px 10px 10px;
-      color: rgb(73, 73, 73);
+      color:#FC4A1A;
       text-decoration: none;
+      font-family: 'Amatic SC', cursive;
+      font-size: 31px;
   }
-  h4:hover{
-      color: pink;
-
+  h3:hover{
+      color:#F7B733;
 
   }
 h5{
       margin: 0; 
       text-align: center; 
-  }
+      color: rgb(78, 78, 78);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 18px;
+      padding: 0 0 11px 0;
+}
 h6{
     margin: 0; 
     text-align: center; 
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(78, 78, 78);
+    font-size: 13px;
+    padding: 0 0 11px 0;
 }
 
 .container{
@@ -69,7 +84,7 @@ h6{
 }
 li{
     background: white;
-    border: black solid 1px;
+    border:#DFDCE3  solid 1px;
     height: 400px; 
     width: 300px; 
     margin: 0 10px 10px 0 ;
@@ -80,5 +95,9 @@ img{
     margin-right: auto;
     height: 200px;
     width: auto;
+    overflow: hidden;
 
+}
+form{
+    margin: 11px; 
 }

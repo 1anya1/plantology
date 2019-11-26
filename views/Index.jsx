@@ -8,25 +8,28 @@ class Index extends React.Component {
             <meta charSet="utf-8"/>
             <title>{this.props.title}</title>
             <link rel="stylesheet" href="/normalize.css"></link>
-            <link rel="stylesheet" href="/skeleton.css"></link>
             <link rel="stylesheet" href="/app.css"></link>
+            <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"></link>
+
         </head>
     
-            <nav class="navigation">
-                <a href="/blogs/new">Add New Blog </a>
-                <a href='/blogs'>About Us</a>
-                <a href='/blogs'>Home Page</a>
-            </nav>
-            <h1>Blog Page</h1>
+        <nav class="navigation">
+            <a href='/blogs'>Home Page</a>
+            <a href="/blogs/new">Add New Blog </a> 
+        </nav>
+
+            <h1>Blog Posts</h1>
             <div class='index'>
             <ul class='container'> 
                 {
                     this.props.blogs.map((blog, i)=>{
                         return(
                             <li>
-                            <a href={`/blogs/${blog._id}`}> <h4>{blog.title}</h4></a> 
+                            <a href={`/blogs/${blog._id}`}> <h3>{blog.title}</h3></a> 
                                
-                               <h6>Published By: {blog.author}</h6>  
+                               <h5>Posted By: {blog.author}</h5>  
                                <h6>{blog.date}</h6>
                                 <img src={blog.image} style={{width:'250px'}}></img>
                             </li>
