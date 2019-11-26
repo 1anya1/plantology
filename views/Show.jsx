@@ -9,6 +9,7 @@ class Show extends React.Component {
                 <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs'>About Us</a>
                 <a href='/blogs'>Home Page</a>
+                <a href={`/blogs/${this.props.blog._id}/edit`}>EDIT POST</a> 
             </nav>
             
             <h2>{this.props.blog.title}</h2>
@@ -19,7 +20,7 @@ class Show extends React.Component {
             <form action={`/blogs/${this.props.blog._id}?_method=DELETE`} method='POST'>
             <input type='submit' value="DELETE"/>
             </form>
-                            
+                         
         </div>
         )
     }

@@ -45,13 +45,24 @@ app.post('/blogs/', (req, res)=>{
         res.redirect('/blogs');
     });  
 });
-
+//Delete Route
 app.delete('/blogs/:id', (req, res)=>{
     Blog.findByIdAndRemove(req.params.id, (err, data)=>{
         res.redirect('/blogs'); 
     });
 });
-
+//Update Route 
+app.get('/blogs/:id/edit', (req, res) => {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        res.render('Edit', {
+            blog:foundBlog
+        });
+    })
+})
+//Put Route
+app.put('/blogs/:id', (req, res)=>{
+    res.send(req.body);
+})
 //Mongoose connection
 mongoose.connect('mongodb://localhost:27017/blogging', { useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.connection.once('open', ()=> {console.log('connected to mongo');
