@@ -11,6 +11,7 @@ class Show extends React.Component {
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
             <link rel="stylesheet" href="/normalize.css"></link>
             <link rel="stylesheet" href="/app.css"></link>
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap" rel="stylesheet"></link>
             
         </head>
         <nav class="navigation">

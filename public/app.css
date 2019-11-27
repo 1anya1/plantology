@@ -124,6 +124,7 @@ li{
     height: 460px; 
     width: 300px; 
     margin:  10px ;
+    padding: 35px 0  0  0;
 }
 .main{
     display: block;
@@ -131,10 +132,13 @@ li{
     margin-right: auto;
     height: 230px;
     width: 230px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
+   
+    border: #4ABDAC double 11px;
     overflow: hidden;
     background: white; 
-    padding: 35px 0  0  0;
+    /* padding: 35px 0  0  0; */
+    
 
 }
 form{
@@ -150,12 +154,8 @@ form{
     height: 350px;
     width: 350px;
     overflow: hidden;
-   
     border: white double 11px;
     border-radius: 50%;
- 
-    background-repeat: repeat;
-
 }
 .homepage {
     display: block;
