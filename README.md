@@ -1,2 +1,2 @@
 # plantology
-Plantology is a blog site where users can add articles about plant care, disease, and tips for keeping their plants healthy. 
+Plantology is a blog site where users can add articles about plants, their care, and tips for keepingx plants healthy. 

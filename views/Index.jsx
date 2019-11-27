@@ -28,11 +28,10 @@ class Index extends React.Component {
                     this.props.blogs.map((blog, i)=>{
                         return(
                             <li>
-                            <a href={`/blogs/${blog._id}`}> <h3>{blog.title}</h3></a> 
-                               
-                               <h5>Posted By: {blog.author}</h5>  
-                               <h6>{blog.date}</h6>
-                                <img src={blog.image} style={{width:'250px'}}></img>
+                                <img class= "main" src={blog.image}></img>
+                                <a href={`/blogs/${blog._id}`}> <h3>{blog.title}</h3></a> 
+                                <h5>By: {blog.author}</h5>  
+                                <h6>{blog.date}</h6>
                             </li>
                         )
                     })

@@ -4,15 +4,16 @@ body{
 
 .navigation {
     background: white; 
-    height: 50px; 
+    height: 70px; 
     margin: 0 0 51px 0; 
 }
 nav a{
     float: left;
     color: #FC4A13;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 16px 0 25px;
     text-decoration: none;
+    
     font-size: 17px;
 }
 a {
@@ -95,7 +96,7 @@ h6{
     font-family: 'Quicksand', sans-serif;
     color: rgb(78, 78, 78);
     font-size: 13px;
-    padding: 0 0 11px 0;
+    padding: 0 0 35px 0;
 }
 p{
     
@@ -113,24 +114,27 @@ p{
     justify-items: center;
     align-items: center;
     justify-content: center;
-    
+    padding: 30px; 
+    margin: 11px;
     overflow: hidden;
 }
 li{
     background: white;
     border:#DFDCE3  solid 1px;
-    height: 400px; 
+    height: 460px; 
     width: 300px; 
-    margin: 0 10px 10px 0 ;
+    margin:  10px ;
 }
-img{
+.main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
-    width: auto;
+    height: 230px;
+    width: 230px;
+    /* border-radius: 50%; */
     overflow: hidden;
     background: white; 
+    padding: 35px 0  0  0;
 
 }
 form{
@@ -143,11 +147,11 @@ form{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     overflow: hidden;
-    border-radius: 10px;
-    /* border:#F7B733 solid 5px; */
+   
+    border: white double 11px;
     border-radius: 50%;
  
     background-repeat: repeat;
@@ -157,13 +161,7 @@ form{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 450px;
+    height: auto;
     width: 100%;
     overflow: hidden;
-    border-radius: 10px;
-    /* border:#F7B733 solid 5px; */
-    
- 
-    background-repeat: repeat;
-
 }

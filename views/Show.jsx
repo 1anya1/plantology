@@ -15,13 +15,12 @@ class Show extends React.Component {
         </head>
         <nav class="navigation">
                 <a href='/blogs'>Home Page</a>
-                <a href="/blogs/new">Add New Blog </a>
                 <a href='/blogs/about'>About Us</a>
                 <a href={`/blogs/${this.props.blog._id}/edit`}>EDIT POST</a> 
             </nav>
             <img  class ="pageID" src={`${this.props.blog.image}`} />
             <h2>{this.props.blog.title}</h2>
-            <h4 class='createdBy'>Created By: {this.props.blog.author}</h4>
+            <h4 class='createdBy'>By: {this.props.blog.author}</h4>
             <h4 class ='date'>{this.props.blog.date}</h4>
             
             <p>{this.props.blog.body}</p>
