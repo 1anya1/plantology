@@ -34,14 +34,14 @@ ul {
 h1{
     text-align: center;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     font-size: 52px;
     margin: 21px;    
 }
 h2{
     text-align: center;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     font-size: 40px;
     margin: 11px; 
 }

@@ -8,8 +8,8 @@ class About extends React.Component {
             <meta charSet="utf-8"/>
             <title>{this.props.title}</title>
             <link rel="stylesheet" href="/normalize.css"></link>
-          
             <link rel="stylesheet" href="/app.css"></link>
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap" rel="stylesheet"></link>
         </head>
             <nav class="navigation">
                 <a href='/blogs'>Home Page</a>

@@ -12,6 +12,7 @@ class Index extends React.Component {
             <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap" rel="stylesheet"></link>
 
         </head>
     
@@ -21,7 +22,7 @@ class Index extends React.Component {
             <a href="/blogs/new">Add New Blog </a> 
         </nav>
 
-            <h1>Blog Posts</h1>
+            <h1>Welcome to Plant-ology</h1>
             <div class='index'>
             <ul class='container'> 
                 {
