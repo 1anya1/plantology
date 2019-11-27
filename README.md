@@ -1,6 +1,15 @@
+*Technologies Used:
+HTML(Views)
+JavaScript (Models, server.js)
+Node.js - to run JS file outside of browser
+Mongo DB - created a database plantology with subdatabase called blogging
+Mongoose - stored Schemas for my blog object 
+React -  used to build interface of my app 
+Express and package.json - used them as libraries/ frameworks
+git push 
 
-Approach:
-The goal of plant-ology app is for users to search the website to find information specific to indoor plant species, their care, and general information about house plants. My approach was to create a home page that houses all of the blogs that are displayed in a card format. By displaying basic information (photo and the title) the user can quickly find what they are looking for. I used grid layout in order to display the cards in this way. 
+#Approach:
+The goal of plant-ology app is for users to search the website to find information specific to indoor plant species, their care, and generalls information about house plants. My approach was to create a home page that houses all of the blogs that are displayed in a card format. By displaying basic information (photo and the title) the user can quickly find what they are looking for. I used grid layout in order to display the cards in this way. 
 
 I wanted the user to be able to edit or delete the blog once they were on the page. I incorporated the delete button at the bottom of the blog page and an EDIT BLOG link at the top of the navigation. 
 
@@ -12,7 +21,7 @@ In addition to the blog page I added about us page where the user can learn more
 
 I wanted to make the site pop so I used a color pallet of 3 to tie the design together. I added hovering effects to the nav bar and to the 
 
-Unsolved Problems:
+#Unsolved Problems:
 -Add a search bar to search the webpage for specific key words
 -Add tags for each blog post so they will be saved to a specific library
 -Update homepage so it will allow the user to choose the categories of blogs( i.e plant care, plant id, plant disease/ pests etc)
