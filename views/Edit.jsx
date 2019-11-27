@@ -8,6 +8,7 @@ class Edit extends React.Component {
             <meta charSet="utf-8"/>
             <title>{this.props.title}</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+            <link rel="stylesheet" href="/normalize.css"></link>
             <link rel="stylesheet" href="/app.css"></link>
             <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap" rel="stylesheet"></link>
         </head>
@@ -37,7 +38,7 @@ class Edit extends React.Component {
                     <input type="text" name="date" class="form-control" placeholder={this.props.blog.date}/><br/>
                   </div>
                 </div>
-              <div class="col-auto ">
+                <div class="text-center">
                   <button type="submit" class="btn btn-light text-center" name="" >UpdateBlog</button>
                 </div>
              </form>
