@@ -13,6 +13,7 @@ class Edit extends React.Component {
         <nav class="navigation">
                 <a href='/blogs'>Home Page</a>
                 <a href="/blogs/new">Add New Blog </a>
+                <a href='/blogs/about'>About Us</a>
                       
         </nav>
             
@@ -35,8 +36,8 @@ class Edit extends React.Component {
                     <input type="text" name="date" class="form-control" placeholder={this.props.blog.date}/><br/>
                   </div>
                 </div>
-              <div class="col-auto">
-                  <button type="submit" class="btn btn-primary" name="" >UpdateBlog</button>
+              <div class="col-auto ">
+                  <button type="submit" class="btn btn-light text-center" name="" >UpdateBlog</button>
                 </div>
              </form>
             </div>

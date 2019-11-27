@@ -22,16 +22,16 @@ class New extends React.Component {
             <form action="/blogs" method="POST">
                 <div class="row">
                   <div class="col">
-                    <input type="text" name="title" class="form-control" placeholder="BlogPost Title"/><br/>
+                    <input type="text" name="title" class="form-control" placeholder="Post Title"/><br/>
                   </div>
                   <div class="col">  
-                    <input type="text" name="author" class="form-control"  placeholder="Your Name"/><br/>
+                    <input type="text" name="author" class="form-control"  placeholder="Name"/><br/>
                   </div>
                   </div>
 
                   <div class="row">
                     <div class="col">
-                      <input type="text" name="date" class="form-control" placeholder=" Date (i.e 11.12.2012)"/><br/>
+                      <input type="text" name="date" class="form-control" placeholder=" Date (i.e November 11, 2019)"/><br/>
                     </div>
                     <div class="col">  
                       <input type="URL" name="image" class="form-control" placeholder="Image URL"/><br/>
@@ -39,10 +39,10 @@ class New extends React.Component {
                   </div>
                   <div class="form-group">
                 
-                <textarea class="form-control" placeholder="Your thought go here ...." rows="3" type="text" name="body" /><br/>
+                <textarea class="form-control"  id="info" placeholder="Your thought go here ...." rows="3" type="text" name="body" /><br/>
                 </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary" name="" >Create Blog</button>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-light  btn-center" name="" >Create Blog</button>
                 </div>
                 
              </form>
