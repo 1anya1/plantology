@@ -9,7 +9,11 @@ class About extends React.Component {
             <title>{this.props.title}</title>
             <link rel="stylesheet" href="/normalize.css"></link>
             <link rel="stylesheet" href="/app.css"></link>
+            <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap" rel="stylesheet"></link>
+
         </head>
             <nav class="navigation">
                 <a href='/blogs'>Home Page</a>
@@ -39,8 +43,7 @@ class About extends React.Component {
                   viverra nulla ut metus varius laoreet. Quisque rutrum. 
                   Aenean imperdiet. Etiam ultricies nisi vel augue. 
                   Curabitur ullamcorper ultricies nisi.</p>
-                  <h1>Lorem ipsum dolor sit amet consectetuer adipiscing 
-                  elit</h1>
+                 
                   <h2>Aenean commodo ligula eget dolor aenean massa</h2>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
                   elit. Aenean commodo ligula eget dolor. Aenean massa. 
