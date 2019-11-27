@@ -17,10 +17,10 @@ class About extends React.Component {
                 <a href='/blogs/about'>About Us</a>
                 
             </nav>
-            <h1>About Us</h1>
+            <h1>Plant-ology</h1>
             <div class="aboutUs">
               <img class='homepage' src='https://img.sunset02.com/sites/default/files/styles/4_3_horizontal_inbody_900x506/public/1483569001/grouped-big-leaf-houseplants-sun-0217.jpg'></img>
-              <h1>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h1>
+             
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
                   elit. Aenean commodo ligula eget dolor. Aenean massa 
                   . Cum sociis natoque penatibus 

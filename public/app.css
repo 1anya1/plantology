@@ -104,7 +104,8 @@ p{
     background: white; 
     color: rgb(78, 78, 78);
     font-size: 18px;
-    padding: 31px;
+    padding: 51px;
+    margin: 40px 0 0 0;
 }
 .container{
     display: grid; 
@@ -138,10 +139,15 @@ li{
     background: white; 
 }
 form{
-    margin: 11px; 
+    padding: 20px; 
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .form{
     background:#4ABDAC; 
+   
 }
 .pageID{
     display: block;
@@ -158,8 +164,10 @@ form{
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 100%;
+    max-width: 1200px;
     overflow: hidden;
+    background: white;
+    
 }
 
 
