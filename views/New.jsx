@@ -2,7 +2,6 @@ const React = require('react');
 
 class New extends React.Component {
   render() {
-
     return (
     <div>
         <head>
@@ -42,7 +41,8 @@ class New extends React.Component {
                   </div>
                   <div class="form-group">
                 
-                <textarea class="form-control"  id="info" placeholder="Your thought go here ...." rows="3" type="text" name="body" /><br/>
+                <textarea onkeydown="if(event.keyCode == 13) return false;" class="form-control"  id="info" placeholder="Your thought go here ...." rows="3" type="text" name="body" /><br/>
+                
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-light  btn-center" name="" >Create Blog</button>
