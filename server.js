@@ -4,7 +4,7 @@ const Blog = require('./models/blogs.js');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/blogging'
-
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
@@ -78,10 +78,7 @@ app.put('/blogs/:id', (req, res)=>{
 });
 
 
-
-
-
  // Port Listen   
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log('listening')
 }); 
