@@ -1,8 +1,8 @@
 {
   "name": "project_2",
   "version": "1.0.0",
-  "engines":{
-    "node":"12.7.0"
+  "engines": {
+    "node": "12.7.0"
   },
   "description": "*Technologies Used: HTML(Views) JavaScript (Models, server.js) Node.js - to run JS file outside of browser Mongo DB - created a database plantology with subdatabase called blogging Mongoose - stored Schemas for my blog object  React -  used to build interface of my app  Express and package.json - used them as libraries/ frameworks git push",
   "main": "server.js",
