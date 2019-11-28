@@ -1,10 +1,14 @@
 {
   "name": "project_2",
   "version": "1.0.0",
-  "description": "",
+  "engines":{
+    "node":"12.7.0"
+  },
+  "description": "*Technologies Used: HTML(Views) JavaScript (Models, server.js) Node.js - to run JS file outside of browser Mongo DB - created a database plantology with subdatabase called blogging Mongoose - stored Schemas for my blog object  React -  used to build interface of my app  Express and package.json - used them as libraries/ frameworks git push",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +20,13 @@
     "mongoose": "^5.7.12",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1anya1/plantology.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1anya1/plantology/issues"
+  },
+  "homepage": "https://github.com/1anya1/plantology#readme"
 }

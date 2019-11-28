@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
 const Blog = require('./models/blogs.js');
 const methodOverride = require('method-override');
+const mongoose = require('mongoose');
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/blogging'
 
 
 app.set('view engine', 'jsx');
@@ -11,7 +12,12 @@ app.use(express.urlencoded({extended: true}));
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
-
+//Mongoose connection
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: true
+});
 
 //Index Route
 app.get('/blogs', (req, res)=>{
@@ -71,10 +77,9 @@ app.put('/blogs/:id', (req, res)=>{
     });
 });
 
-//Mongoose connection
-mongoose.connect('mongodb://localhost:27017/blogging', { useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connection.once('open', ()=> {console.log('connected to mongo');
-});
+
+
+
 
  // Port Listen   
 app.listen(3000, ()=>{
