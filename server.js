@@ -20,13 +20,23 @@ mongoose.connect(MONGODB_URI, {
 });
 
 //Index Route
-app.get('/blogs', (req, res)=>{
+app.get('/', (req, res)=>{
         // res.render('Index');
     Blog.find({}, (err, allBlogs)=>{
         res.render('Index', {
             blogs: allBlogs
         });
     });
+});
+
+app.get('/blogs', (req, res)=>{
+    // res.render('Index');
+Blog.find({}, (err, allBlogs)=>{
+    res.render('Index', {
+        blogs: allBlogs
+    });
+});
+});
     
 // Render View 
 app.get('/blogs/new', (req, res)=>{
@@ -47,7 +57,6 @@ app.get('/blogs/:id', (req, res)=>{
     });
 });
    
-});
 
 //
 // Create Blog Route --> redirect index
