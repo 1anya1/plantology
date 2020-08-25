@@ -1,3 +1,5 @@
+website: https://plantology.herokuapp.com/blogs
+
 *Technologies Used:
 HTML(Views)
 JavaScript (Models, server.js)
